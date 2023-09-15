@@ -18,6 +18,8 @@ If you pass in a single file, it will create a new file with the same name in th
 mov2gif myScreenRecording.mov
 ```
 
+If you forget, you can use `mov2gif --help` or `mov2gif -h` to help jog your memory!
+
 will create a new file called `myScreenRecording.gif` instead! Yay!
 
 ## Installing mov2gif
