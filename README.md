@@ -22,8 +22,14 @@ will create a new file called `myScreenRecording.gif` instead! Yay!
 
 ## Installing mov2gif
 
-1. Download the `mov2gif_install` from this repo.
-2. In the directory that you downloaded this to, run this command to begin the installation process:
+1. Make sure you have `brew` installed, and the necessary packages:
+
+```bash
+brew install ffmpeg gifsicle
+```
+
+2. Download the `mov2gif_install` from this repo.
+3. In the directory that you downloaded this to, run this command to begin the installation process:
 
 ```bash
 chmod +x mov2gif_install && sudo ./mov2gif_install && rm mov2gif_install
