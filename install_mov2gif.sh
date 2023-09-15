@@ -40,8 +40,8 @@ fi
 # Input path (file or folder)
 input_path="\$1"
 
-# Normalize the input path by removing any trailing slashes
-input_path=\$(realpath -e "\$input_path")
+# Remove trailing slashes from the input path
+input_path="\${input_path%/}"
 
 # Path to Homebrew-installed ffmpeg
 ffmpeg_path="/opt/homebrew/bin/ffmpeg"
