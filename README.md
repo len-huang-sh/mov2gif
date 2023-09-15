@@ -28,11 +28,11 @@ will create a new file called `myScreenRecording.gif` instead! Yay!
 brew install ffmpeg gifsicle
 ```
 
-2. Download the `mov2gif_install.sh` from this repo.
+2. Download the `install_mov2gif.sh` from this repo.
 3. In the directory that you downloaded this to, run this command to begin the installation process:
 
 ```bash
-chmod +x mov2gif_install.sh && sudo ./mov2gif_install.sh && rm mov2gif_install.sh
+chmod +x install_mov2gif.sh && sudo ./install_mov2gif.sh && rm install_mov2gif.sh
 ```
 
 3. It is now installed to `/usr/local/bin` ! Yay.
