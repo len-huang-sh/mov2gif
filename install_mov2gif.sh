@@ -37,21 +37,6 @@ if [ \$# -ne 1 ]; then
   usage
 fi
 
-# Function to check if a command is installed
-check_command() {
-  local cmd_name="$1"
-  if ! command -v "$cmd_name" &>/dev/null; then
-    echo "Error: $cmd_name is not installed. Please install $cmd_name and try again."
-    exit 1
-  fi
-}
-
-# Check if ffmpeg is installed
-check_command "ffmpeg"
-
-# Check if gifsicle is installed
-check_command "gifsicle"
-
 # Input path (file or folder)
 input_path="\$1"
 
