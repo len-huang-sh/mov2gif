@@ -2,6 +2,27 @@
 
 This is a tool I generated using ChatGPT to make it easier to convert Mac screen recordings to gif on my computer locally.
 
+----
+
+## Installing mov2gif
+
+1. Make sure you have `brew` installed, and the necessary packages:
+
+```bash
+brew install ffmpeg gifsicle
+```
+
+2. Download the `install_mov2gif.sh` from this repo.
+3. In the directory that you downloaded this to, run this command to begin the installation process:
+
+```bash
+chmod +x install_mov2gif.sh && sudo ./install_mov2gif.sh && rm install_mov2gif.sh
+```
+
+3. It is now installed to `/usr/local/bin` ! Yay.
+
+----
+
 ## Using mov2gif
 
 When you pass in a folder, let's say `screenRecordingFolder/`, running...
@@ -22,19 +43,3 @@ If you forget, you can use `mov2gif --help` or `mov2gif -h` to help jog your mem
 
 will create a new file called `myScreenRecording.gif` instead! Yay!
 
-## Installing mov2gif
-
-1. Make sure you have `brew` installed, and the necessary packages:
-
-```bash
-brew install ffmpeg gifsicle
-```
-
-2. Download the `install_mov2gif.sh` from this repo.
-3. In the directory that you downloaded this to, run this command to begin the installation process:
-
-```bash
-chmod +x install_mov2gif.sh && sudo ./install_mov2gif.sh && rm install_mov2gif.sh
-```
-
-3. It is now installed to `/usr/local/bin` ! Yay.
