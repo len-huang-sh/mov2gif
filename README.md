@@ -21,6 +21,8 @@ chmod +x install_mov2gif.sh && sudo ./install_mov2gif.sh && rm install_mov2gif.s
 
 3. It is now installed to `/usr/local/bin` ! Yay.
 
+![install_tutorial](https://github.com/len-huang-sh/mov2gif/assets/141365989/7aff0091-1159-4d99-aca4-b96d4816b534)
+
 ----
 
 ## Using mov2gif
