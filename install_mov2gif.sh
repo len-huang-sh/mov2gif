@@ -74,7 +74,7 @@ convert_mov_to_gif() {
   echo "Converting \$input_file to \$output_file using ffmpeg..."
   
   # Convert the .mov file to .gif using Homebrew-installed ffmpeg
-  "\$ffmpeg_path" -i "\$input_file" -vf "scale='-2:'min(720,ih)'" -pix_fmt rgb8 -r 10 "\$output_file" > /dev/null 2>&1 && \
+  "\$ffmpeg_path" -i "\$input_file" -vf "scale=-2:'min(720,ih)'" -pix_fmt rgb8 -r 10 "\$output_file" > /dev/null 2>&1 && \
   
   # Optimize the GIF using Homebrew-installed gifsicle
   "\$gifsicle_path" -O3 "\$output_file" -o "\$output_file"
