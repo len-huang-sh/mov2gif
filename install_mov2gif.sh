@@ -49,6 +49,10 @@ ffmpeg_path="/opt/homebrew/bin/ffmpeg"
 # Path to Homebrew-installed gifsicle
 gifsicle_path="/opt/homebrew/bin/gifsicle"
 
+# Check for the existence of ffmpeg + gifsicle
+command -v "\$ffmpeg_path" >/dev/null 2>&1 || { echo >&2 "ffmpeg not installed. Read the documents for how to install mov2gif. Aborting."; exit 1; }
+command -v "\$gifsicle_path" >/dev/null 2>&1 || { echo >&2 "gifsicle not installed. Read the documents for how to install mov2gif. Aborting."; exit 1; }
+
 # Function to convert a single .mov file to .gif
 convert_mov_to_gif() {
   local input_file="\$1"
